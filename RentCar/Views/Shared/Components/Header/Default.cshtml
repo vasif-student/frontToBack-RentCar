@@ -1,0 +1,36 @@
+﻿@model Logo
+
+<!--==================== HEADER START ====================-->
+<header class="header">
+    <div class="navbar__container">
+        <nav>
+            <div class="logo">
+                <img src="~/image/@Model.Image" alt="Logo Image">
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav__links">
+                <li><a asp-action="Index" asp-controller="Home">Ana səhifə</a></li>
+                <li><a href="">Haqqımızda</a></li>
+                <li><a asp-action="Index" asp-controller="Partner">Tərəfdaşlarımız</a></li>
+                <li><a href="#">Xidmətlər</a></li>
+                <li><a asp-action="Index" asp-controller="Contact">Əlaqə</a></li>
+
+                <!--=== darkmode ===-->
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+                <!--=== end ===-->
+
+                <li><a class="login__button" href="login.html">Giriş</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--==================== HEADER END ====================-->
